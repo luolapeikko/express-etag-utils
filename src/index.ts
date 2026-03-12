@@ -1,6 +1,7 @@
-import * as etag from 'etag';
-import {Request, RequestHandler, Response} from 'express';
+import etag from 'etag';
+import type {Request, RequestHandler, Response} from 'express';
 import {ETagError} from './ETagError';
+
 export {ETagError, isETagError} from './ETagError';
 
 export type ETagCallbackResponse<T = unknown> = {

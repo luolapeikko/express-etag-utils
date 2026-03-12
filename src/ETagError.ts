@@ -1,5 +1,5 @@
 export class ETagError extends Error {
-	constructor(message: string) {
+	public constructor(message: string) {
 		super(message);
 		this.name = 'ETagError';
 		Error.captureStackTrace(this, this.constructor);
