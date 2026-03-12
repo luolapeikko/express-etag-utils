@@ -39,13 +39,13 @@ jobs:
           echo "HAVE_LINT_SCRIPT=$(jq 'if .scripts.lint == null then false else true end' package.json)" | tee -a $GITHUB_ENV
           echo "HAVE_UNIT_TEST_SCRIPT=$(jq 'if .scripts.test == null then false else true end' package.json)"| tee -a $GITHUB_ENV
 
-      - uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
-        if: env.NPM == 'pnpm'
-
       - uses: actions/setup-node@v6
         with:
           node-version: "lts/*"
           registry-url: "https://registry.npmjs.org"
+
+      - uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
+        if: env.NPM == 'pnpm'
 
       - name: Get current npmjs version for ${{env.PACKAGE_NAME}}
         run: |
@@ -66,7 +66,7 @@ jobs:
         if: env.HAVE_LINT_SCRIPT == 'true'
         run: ${{ env.NPM }} run lint
 
-      - name: Run code coverage 
+      - name: Run code coverage
         if: env.HAVE_COVERAGE_SCRIPT == 'true'
         run: ${{ env.NPM }} run coverage
 
