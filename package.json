@@ -1,6 +1,6 @@
 {
   "name": "@avanio/express-etag-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ExpressJS ETag utils",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
