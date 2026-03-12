@@ -20,6 +20,7 @@ env:
   HAVE_VALIDATE_SCRIPT: false
   HAVE_LINT_SCRIPT: false
   HAVE_UNIT_TEST_SCRIPT: false
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
