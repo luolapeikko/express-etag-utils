@@ -9,7 +9,7 @@ export default defineConfig({
 			provider: 'v8',
 			include: ['src/**/*.ts'],
 			exclude: ['test/**/*.ts'],
-			reporter: ['text'],
+			reporter: ['text','lcovonly'],
 		},
 		include: ['test/**/*.test.ts'],
 		typecheck: {
