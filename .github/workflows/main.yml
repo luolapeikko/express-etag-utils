@@ -39,7 +39,7 @@ jobs:
           echo "HAVE_LINT_SCRIPT=$(jq 'if .scripts.lint == null then false else true end' package.json)" | tee -a $GITHUB_ENV
           echo "HAVE_UNIT_TEST_SCRIPT=$(jq 'if .scripts.test == null then false else true end' package.json)"| tee -a $GITHUB_ENV
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: "lts/*"
           registry-url: "https://registry.npmjs.org"
