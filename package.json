@@ -43,17 +43,17 @@
     "express": ">=4.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
-    "@tsconfig/node24": "^24.0.4",
+    "@biomejs/biome": "^2.5.14",
+    "@tsconfig/node24": "^24.0.5",
     "@types/etag": "^1.8.4",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.4.0",
-    "@vitest/coverage-v8": "^4.0.18",
-    "c8": "^11.0.0",
+    "@types/node": "^25.9.7",
+    "@vitest/coverage-v8": "^5.0.1",
+    "c8": "^12.0.0",
     "express": "^5.2.1",
-    "tsdown": "^0.21.2",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
   },
   "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
 }
