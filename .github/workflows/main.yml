@@ -53,7 +53,7 @@ jobs:
         if: |
           github.ref == env.PUBLISH_BRANCH &&
           env.HAVE_COVERAGE_SCRIPT == 'true'
-        uses: qltysh/qlty-action/coverage@c9b09987143d1e4ac955f4803c7bea742102feb5 # v2.4.0
+        uses: qltysh/qlty-action/coverage@a46e29cfd54065ae8a2c6b1fd3446aed1b1a4257 # v2.8.0
         with:
           oidc: true
           files: coverage/lcov.info
